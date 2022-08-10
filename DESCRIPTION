@@ -1,11 +1,17 @@
 Package: nothing
 Type: Package
-Title: What the Package Does (Title Case)
+Title: This package does nothing
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Author: Brian Carter
+Maintainer: Me:  <bcarter6@me.com>
+Description: There's nothing to describe
 License: What license is it under?
+Imports:
+  dplyr,
+  plotly
 Encoding: UTF-8
 LazyData: true
+Depends: 
+    R (>= 4.0),
+    plotly,
+    dplyr
