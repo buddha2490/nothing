@@ -9,15 +9,10 @@ jobs:
       - run:
           name: Installing tinytext
           command: R -e "install.packages('tinytex')"
-      - run:
-          name: tinytext::install_tinytext()
-          command:  R -e "tinytex::install_tinytex()"
-      - run:
-          name: Install package dependencies
-          command: R -e "devtools::install_deps(dep = TRUE)"
+
       - run:
           name: Build package
           command: R CMD build .
       - run:
           name: Check package
-          command: R CMD check *tar.gz
+          command: R CMD check *tar.gz --no-manual
