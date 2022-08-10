@@ -7,6 +7,12 @@ jobs:
     steps:
       - checkout
       - run:
+        name: Installing tinytext
+        command: R -e "install_packages('tinytex')"
+      - run:
+        name: tinytext::install_tinytext()
+        command:  R -e "tinytex::install_tinytex()"
+      - run:
           name: Install package dependencies
           command: R -e "devtools::install_deps(dep = TRUE)"
       - run:
