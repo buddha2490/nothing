@@ -3,7 +3,7 @@ Type: Package
 Title: This package does nothing
 Version: 0.1.0
 Author: Brian Carter
-Maintainer: Tme:  bcarter6@me.com
+Maintainer: Me:  <bcarter6@me.com>
 Description: There's nothing to describe
 License: What license is it under?
 Imports:
