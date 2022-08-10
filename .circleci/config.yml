@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: Installing tinytext
-          command: R -e "install_packages('tinytex')"
+          command: R -e "install.packages('tinytex')"
       - run:
           name: tinytext::install_tinytext()
           command:  R -e "tinytex::install_tinytex()"
