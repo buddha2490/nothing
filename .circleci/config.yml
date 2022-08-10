@@ -7,8 +7,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Installing tinytext
-          command: R -e "install.packages('tinytex')"
+          name: Installing plotly
+          command: R -e "install.packages('plotly')"
 
       - run:
           name: Build package
